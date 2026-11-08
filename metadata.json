@@ -1,0 +1,6 @@
+{
+  "name": "ERAN VIDEO OPTIMIZER",
+  "description": "Professional video optimization and compression studio powered by FFmpeg. Preserves high frame rates up to 120 FPS, 4K/8K resolutions, and delivers maximum quality with ultra-compact file sizes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

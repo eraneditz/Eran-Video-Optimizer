@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #08080c;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom neon glow effects */
+.neon-glow-purple {
+  box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.4), 0 0 10px -2px rgba(168, 85, 247, 0.2);
+}
+
+.neon-glow-blue {
+  box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.4), 0 0 10px -2px rgba(56, 189, 248, 0.2);
+}
+
+.neon-border-glow {
+  position: relative;
+}
+
+.neon-border-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, #a855f7, #3b82f6, #ec4899);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.5;
+  filter: blur(8px);
+  transition: opacity 0.3s ease;
+}
+
+.neon-border-glow:hover::before {
+  opacity: 0.85;
+}
+
+/* Glassmorphism cards */
+.glass-panel {
+  background: rgba(18, 18, 28, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(22, 22, 35, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* Custom Range Slider */
+input[type="range"] {
+  accent-color: #a855f7;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d15;
+}
+::-webkit-scrollbar-thumb {
+  background: #27273a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
